@@ -48,7 +48,7 @@ When using multi-modal data, the folder structure should be as follows:
  ```
  
 ## Training
-The modal can traied to perform super resolution and can also take multi-modal data. In order to train the model, execute the following command with the specific arguments:
+The modal can traied to perform super resolution and can also take multi-modal data. In order to train the model, execute the following command with the specified arguments:
 ```
 python3 train.py --dataroot ../path/to/dataset --name NAME --display_dir DISPLAY_DIR --result_dir RESULT_DIR --multi_modal 1
 tensorboard --logdir DISPLAY_DIR/NAME
