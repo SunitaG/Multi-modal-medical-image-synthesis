@@ -1,11 +1,14 @@
 # Multi Modal Medical Image Synthesis 
 An unsupervised multi-modal image synthesis network with using Generative Adversarial Networks. Performs translations using the concept of disentagled representations. Disentangled representations invloves mapping the image space into a domain invariant common content space and a domain specific attribute space as shown in the figure. The model performs traslations by obatainting the content from domain S and extracting the attribures from domain R.
 
-<img src='imgs/architecture.png' width="800px">
+<img src='images/architecture.png' width="800px">
 
 This network has been to data homogenization of different MRI datasets. The network performs super resolution and can handle multi modal MRI data sequences (Eg: Flair, T1)
 
 ## Example Output
+
+
+<img src='images/healthy_old_new.png' width="500px" height="400px" align="center">
 
 ## Requirements
 
@@ -44,7 +47,7 @@ When using multi-modal data, the folder structure should be as follows:
   |       |-- testB
  ```
  
-## Trainin
+## Training
 The modal can traied to perform super resolution and can also take multi-modal data. In order to train the model, execute the following command with the specific arguments:
 ```
 python3 train.py --dataroot ../path/to/dataset --name NAME --display_dir DISPLAY_DIR --result_dir RESULT_DIR --multi_modal 1
@@ -62,7 +65,9 @@ where
 
 ## Inference with sampled attribues
 The model output is obtained using input from domain R for the content, and extracting the attributes from an image in the domain S, as shown in
-Figure 3.2. By extracting the attributes from multiple images in domain R, multiple outputs can be produced.
+the figure. By extracting the attributes from multiple images in domain R, multiple outputs can be produced.
+
+<img src='images/inference.png' width="800px">
 
 ### Multiple outputs
 
@@ -79,6 +84,11 @@ where
 - num: number of outputs per input image
 
 ### Mean Output Inference
+
+The attribute vector is image-specific, i.e., different images in the reference space result in slightly different attribute representations. This induces a distribution over the translation of one content representation from the source space. Therefore, Markov sampling is employed over various images
+from R per one image from S, and the mean is computed as the final translation, as shown in the figure.
+
+<img src='images/mean_inference.png' width="800px">
 
 ```
 python3 test_transfer.py --dataroot ./datasets/Flair -name out_single --output_dir OUTPUT_DIR --resume --multimodal 0 --average 1 --a2b 1
