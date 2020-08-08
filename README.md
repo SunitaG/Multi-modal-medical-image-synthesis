@@ -72,7 +72,7 @@ the figure. By extracting the attributes from multiple images in domain R, multi
 ### Multiple outputs
 
 ```
-python3 test_transfer.py --dataroot ./datasets/Flair -name out_single --output_dir OUTPUT_DIR --resume --multimodal 0 --average 0 --a2b 1 --num 3
+python3 test_transfer.py --dataroot ./datasets/path -name NAME --output_dir OUTPUT_DIR --resume --multimodal 0 --average 0 --a2b 1 --num 3
 ```
 
 where 
@@ -91,7 +91,7 @@ from R per one image from S, and the mean is computed as the final translation, 
 <img src='images/mean_inference.png' width="800px">
 
 ```
-python3 test_transfer.py --dataroot ./datasets/Flair -name out_single --output_dir OUTPUT_DIR --resume --multimodal 0 --average 1 --a2b 1
+python3 test_transfer.py --dataroot ./dataset/path -name NAME --output_dir OUTPUT_DIR --resume --multimodal 0 --average 1 --a2b 1
 ```
 
 where 
