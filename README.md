@@ -101,6 +101,12 @@ where
 - average: specifies if the output images should be avrerged or not, 1 if averaged and 0 for multiple output images
 - a2b: direction of translation, 1 for translation from A to B and 0 for B to A
 
+### References
+
+Diverse Image-to-Image Translation via Disentangled Representations
+Hsin-Ying Lee*, Hung-Yu Tseng*, Jia-Bin Huang, Maneesh Kumar Singh, and Ming-Hsuan Yang
+European Conference on Computer Vision (ECCV), 2018
+
 
 
 
