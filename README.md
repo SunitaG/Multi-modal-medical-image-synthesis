@@ -107,6 +107,19 @@ Diverse Image-to-Image Translation via Disentangled Representations
 Hsin-Ying Lee*, Hung-Yu Tseng*, Jia-Bin Huang, Maneesh Kumar Singh, and Ming-Hsuan Yang
 European Conference on Computer Vision (ECCV), 2018
 
+### Citation
+
+@software{sunitag_2020_4250632,
+  author       = {SunitaG},
+  title        = {SunitaG/Multi-modal-medical-image-synthesis v1.0},
+  month        = nov,
+  year         = 2020,
+  publisher    = {Zenodo},
+  version      = {v1.0},
+  doi          = {10.5281/zenodo.4250632},
+  url          = {https://doi.org/10.5281/zenodo.4250632}
+}
+
 
 
 
