@@ -109,6 +109,8 @@ European Conference on Computer Vision (ECCV), 2018
 
 ### Citation
 
+```
+
 @software{sunitag_2020_4250632,
   author       = {SunitaG},
   title        = {SunitaG/Multi-modal-medical-image-synthesis v1.0},
@@ -119,7 +121,7 @@ European Conference on Computer Vision (ECCV), 2018
   doi          = {10.5281/zenodo.4250632},
   url          = {https://doi.org/10.5281/zenodo.4250632}
 }
-
+```
 
 
 
